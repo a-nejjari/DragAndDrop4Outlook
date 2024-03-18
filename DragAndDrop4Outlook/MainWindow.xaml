@@ -1,0 +1,32 @@
+﻿<Window x:Class="DragAndDrop4Outlook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Icon="icon.ico"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragAndDrop4Outlook"
+        mc:Ignorable="d"
+        Title="Klic Meldingen Archiveren" Height="500" Width="860">
+    <Window.Resources>
+        <SolidColorBrush x:Key="brush" Color="Red" />
+    </Window.Resources>
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="emailGrid" Width="45.849"/>
+            <ColumnDefinition Width="33.151"/>
+            <ColumnDefinition Width="42.378"/>
+            <ColumnDefinition Width="308.622"/>
+            <ColumnDefinition Name="zipGrid" Width="430"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="LightCyan" x:Name="StackPanelEmails" Drop="Email_Drop" DragEnter="Email_DragEnter" AllowDrop="True" Margin="301,0,10,0" Grid.ColumnSpan="2" DragLeave="T_DragLeave" Grid.Column="3" >
+            <Label x:Name="label1" Content="Plaats hier een email" Height="40" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock TextWrapping="Wrap" x:Name="emailGridMessage" Text="" Height="200" Margin="10,40,10,0"/>
+
+        </StackPanel>
+        <StackPanel Background="LightCyan" x:Name="StackPanelZip" Drop="Zip_DropAsync" DragEnter="Zip_DragEnter" AllowDrop="True" Margin="0,0,13,0" DragLeave="T_DragLeave" Grid.ColumnSpan="4" >
+            <Label x:Name="label2" Content="Plaats hier een Zip bestand" Height="40" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock x:Name="UnzipGridMessage" HorizontalAlignment="Left" Height="200" Margin="10,40,0,0" TextWrapping="Wrap" Text="" Width="397"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

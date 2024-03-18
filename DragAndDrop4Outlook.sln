@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33919.361
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragAndDrop4Outlook", "DragAndDrop4Outlook\DragAndDrop4Outlook.csproj", "{7943B10C-3637-486D-88DE-10A578FB7157}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup3", "Setup3\Setup3.vdproj", "{D59A7DD2-DFB2-4061-86C1-539D6039AD36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7943B10C-3637-486D-88DE-10A578FB7157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7943B10C-3637-486D-88DE-10A578FB7157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7943B10C-3637-486D-88DE-10A578FB7157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7943B10C-3637-486D-88DE-10A578FB7157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59A7DD2-DFB2-4061-86C1-539D6039AD36}.Debug|Any CPU.ActiveCfg = Debug
+		{D59A7DD2-DFB2-4061-86C1-539D6039AD36}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80371A1C-6108-4A2E-96AD-8AB54FBF1CC1}
+	EndGlobalSection
+EndGlobal

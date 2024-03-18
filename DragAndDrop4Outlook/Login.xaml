@@ -1,0 +1,20 @@
+﻿<Window x:Class="DragAndDrop4Outlook.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Icon="icon.ico"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragAndDrop4Outlook"
+        mc:Ignorable="d"
+       Title="Login" Height="291" Width="494">
+    <Grid Margin="0,0,0,1">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="LoginHeading" Text="Login:" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+        <TextBlock Height="50" HorizontalAlignment="Left" Margin="10,44,0,0" x:Name="textBlockHeading" VerticalAlignment="Top" FontSize="12" FontStyle="Italic"  Width="307"><Run Text="Gebruik Esri gebruiker"/><Run Text="s"/><Run Text="gegevens om in te log"/><Run Text="g"/><Run Text="en"/></TextBlock>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="88,94,0,0" Name="userName" Text="Gebruikersnaam" VerticalAlignment="Top" Width="109" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="88,142,0,0" Name="textBlock2" Text="Wachtwoord" VerticalAlignment="Top" Width="85" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="197,94,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="247" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="197,142,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="247" />
+        <Button Content="Login" Height="23" HorizontalAlignment="Left" Margin="197,188,0,0" Name="login_Button" VerticalAlignment="Top" Width="104" Click="button1_Click" IsDefault="True" />
+        <TextBlock Height="23" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" Width="247" Margin="126,225,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C"  />
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="DragAndDrop4Outlook.YesNoWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Icon="icon.ico"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragAndDrop4Outlook"
+        mc:Ignorable="d"
+        Height="300.664" Width="565.944" Title="Koppeling">
+    <Grid Margin="10,10,2,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="439*"/>
+            <ColumnDefinition Width="66*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" x:Name="TextBoxKoppelingss" VerticalAlignment="Top" FontSize="16" FontStretch="ExtraCondensed" Grid.ColumnSpan="3" Width="526"><Run Text="Controleer de onderstaande gegevens en pas de naam indien nodig"/><Run Text=" "/><Run Text="aan"/><Run Text="."/></TextBlock>
+
+        <Button Content="Ja" Height="23" HorizontalAlignment="Left" Margin="114,198,0,0" Name="Yes_Button" VerticalAlignment="Top" Width="104" Click="yes_button_Click" Grid.Column="1"  />
+        <Button Content="Nee" Height="23" HorizontalAlignment="Left" Margin="320,198,0,0" Name="No_Button" VerticalAlignment="Top" Width="104" Click="no_button1_Click" Grid.Column="1" />
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="0,43,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Width="114" AutomationProperties.Name="TextBlockSubjectT"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="126,38,0,0" TextWrapping="Wrap" Text="Email onderwerp" VerticalAlignment="Top" Height="63" Width="363" Grid.ColumnSpan="2" Name="TExtBlockEmailSubject"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="0,106,0,0" TextWrapping="Wrap" Text="Klic meldnummer" VerticalAlignment="Top" Width="125" Name="TextKlickMeldingT"/>
+        <TextBlock Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="16" Margin="130,106,0,0" TextWrapping="Wrap" Text="123456789" VerticalAlignment="Top" Width="359" Name="TextBlockKlickMelding"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0,141,0,0" TextWrapping="Wrap" Text="Bijlage naam" VerticalAlignment="Top" Width="114" Name="TextblockFileName"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="126,141,0,0" TextWrapping="Wrap" Text="123456789" VerticalAlignment="Top" Width="363" Name="TextBoxFileName" TextChanged="TextBox_TextChanged"/>
+    </Grid>
+</Window>
